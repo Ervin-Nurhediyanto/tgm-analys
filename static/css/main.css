@@ -1,0 +1,51 @@
+body {
+	font-family: sans-serif;
+	background: #ccfff2;
+	text-align: center;
+}
+
+.analysis {
+	margin: auto;
+	width: 80%;
+	background-color: yellow;
+}
+
+.output {
+	background-color: rgb(93, 9, 212);
+}
+
+.data {
+	margin: auto;
+	width: 80%;
+}
+
+button {
+	border: none;
+	color: rgb(9, 196, 243);
+	padding: 10px 15px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 12px;
+	margin: 4px 2px;
+	cursor: pointer;
+	width: 100px;
+}
+
+.btn_analysis {
+	height: 50px;
+	width: 150px;
+}
+
+table, th, td {
+	border: 1px solid;
+}
+
+th {
+	background-color: rgb(246, 183, 75);
+	padding: 2px;
+}
+
+#chart {
+	width: 100%;
+}

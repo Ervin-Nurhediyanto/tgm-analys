@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>{% block title %} {%endblock%}</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+	<a href="{{'home'}}">Home</a>
+	<a href="{{'about'}}">About</a>
+	{%block content%}{%endblock%}
+</body>
+<script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+	<script type='text/javascript'>
+		var graphs = {{graphJSON | safe}};
+		Plotly.plot('chart',graphs,{});
+	</script>
+</html>

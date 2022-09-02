@@ -1,0 +1,40 @@
+{% extends 'layout.html' %}
+{%block title%} Data TGM Indonesia {%endblock%}
+
+{%block content%}
+<h1>Data Tingkat Kegemaran Membaca Masyarakat Indonesia</h1>
+<div class='button_data'>
+	<button type="button">
+		<a href="{{'home'}}">DATA</a>
+	</button>
+	<button type="button">
+		<a href="{{'analysis'}}">ANALYSIS</a>
+	</button>
+	<button type="button">
+		<a href="{{'results'}}">RESULTS</a>
+	</button>
+</div>
+
+<table class='data'>
+	<tr>
+		<th>No.</th>
+		<th>Provinsi</th>
+		<th>Frekuensi Membaca</th>
+		<th>Jumlah Bahan Bacaan</th>
+		<th>Durasi Membaca</th>
+		<th>Frekuensi Akses Internet</th>
+		<th>Durasi Akses Internet</th>
+	</tr>
+	{%for i in range(0, len)%}
+	<tr>
+		<td>{{ i + 1 }}</td>
+		<td>{{ prov[i] }}</td>
+		<td>{{ fm[i] }}</td>
+		<td>{{ jb[i] }}</td>
+		<td>{{ dm[i] }} menit/hari</td>
+		<td>{{ fai[i] }}</td>
+		<td>{{ dai[i] }} menit/hari</td>
+	</tr>
+	{%endfor%}
+</table>
+{%endblock%}

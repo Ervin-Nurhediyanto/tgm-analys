@@ -1,0 +1,42 @@
+{% extends 'layout.html' %}
+{%block title%} Data TGM Indonesia {%endblock%}
+
+{%block content%}
+<h1>Data Tingkat Kegemaran Membaca Masyarakat Indonesia</h1>
+<div class='button_data'>
+	<button type="button">
+		<a href="{{'home'}}">DATA</a>
+	</button>
+	<button type="button">
+		<a href="{{'analysis'}}">ANALYSIS</a>
+	</button>
+	<button type="button">
+		<a href="{{'results'}}">RESULTS</a>
+	</button>
+</div>
+
+<div class='analysis'>
+	<button class='btn_analysis' type="button">
+		<a href="{{'analysis_fm'}}">Frekuensi Membaca</a>
+	</button>
+	<button class='btn_analysis' type="button">
+		<a href="{{'analysis_jb'}}">Jumlah Bahan Bacaan</a>
+	</button>
+	<button class='btn_analysis' type="button">
+		<a href="{{'analysis_dm'}}">Durasi Membaca</a>
+	</button>
+	<button class='btn_analysis' type="button">
+		<a href="{{'analysis_fai'}}">Frekuensi Akses Internet</a>
+	</button>
+	<button class='btn_analysis' type="button">
+		<a href="{{'analysis_dai'}}">Durasi Akses Internet</a>
+	</button>
+	<button class='btn_analysis' type="button">
+		<a href="{{'analysis_tgm'}}">Tingkat Gemar Membaca</a>
+	</button>
+	<button class='btn_analysis' type="button">
+		<a href="{{'analysis_correlation'}}">Korelasi</a>
+	</button>
+	<div id='chart' class='chart'”></div>
+</div>
+{%endblock%}
